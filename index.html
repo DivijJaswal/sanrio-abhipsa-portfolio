@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Abhipsa Priyadarshini's pastel sticker-book portfolio: platform engineering, service mesh, DevOps, backend systems, IoT, and full-stack projects."
+    >
+    <title>Abhipsa Priyadarshini | Pastel Sticker Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas id="stickerCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-bow" aria-hidden="true"></span>
+        <span>Abhipsa's Desk</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" data-nav>
+        <a href="#projects">Builds</a>
+        <a href="#skills">Skills</a>
+        <a href="#story">Story</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">ShareChat SDE // Platform and DevOps // IIT (ISM) EE</p>
+          <h1 id="hero-title">Abhipsa Priyadarshini</h1>
+          <p class="hero-lede">
+            Platform and DevOps engineer building service-mesh infrastructure, backend systems, cloud workflows, and
+            performance-focused tooling across high-scale production environments.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">View Builds</a>
+            <a class="button secondary" href="resume.pdf">Resume</a>
+          </div>
+        </div>
+
+        <div class="desk-scene" aria-label="Profile card">
+          <div class="cloud-note">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="id-card">
+            <p class="card-label">profile card</p>
+            <div class="avatar-badge">
+              <span>AP</span>
+            </div>
+            <h2>Platform Engineer</h2>
+            <dl>
+              <div>
+                <dt>Focus</dt>
+                <dd>Service mesh</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>Go, C++, Python, Kubernetes</dd>
+              </div>
+              <div>
+                <dt>Mode</dt>
+                <dd>Reliable at scale</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="sticker-sheet" aria-hidden="true">
+            <span class="sticker star"></span>
+            <span class="sticker heart"></span>
+            <span class="sticker sparkle"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-strip" aria-label="Profile summary">
+        <p>
+          Abhipsa works on ShareChat's in-house Envoy-based service mesh, Nexus, supporting 120+ microservices and
+          7.5M requests per second while improving cost, reliability, and runtime performance.
+        </p>
+      </section>
+
+      <section class="section-block" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p>Sticker Sheet</p>
+          <h2 id="projects-title">Selected Builds</h2>
+        </div>
+
+        <div class="filter-bar" aria-label="Build filters">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="platform">Platform</button>
+          <button class="filter-button" type="button" data-filter="devops">DevOps</button>
+          <button class="filter-button" type="button" data-filter="django">Django</button>
+          <button class="filter-button" type="button" data-filter="iot">IoT</button>
+        </div>
+
+        <div class="project-grid" data-project-grid>
+          <article class="project-card" data-category="platform devops">
+            <div class="project-pin">01</div>
+            <p class="project-type">Service Mesh</p>
+            <h3>Nexus at ShareChat</h3>
+            <p>
+              Owns and manages ShareChat's in-house Envoy-based service mesh powering 120+ microservices and 7.5M
+              requests per second, with a 95% reduction in Network Inter-Zone Egress costs.
+            </p>
+            <ul>
+              <li>Envoy</li>
+              <li>Kubernetes</li>
+              <li>Go</li>
+            </ul>
+            <a href="#story">Read Nexus experience</a>
+          </article>
+
+          <article class="project-card" data-category="platform devops">
+            <div class="project-pin">02</div>
+            <p class="project-type">Performance</p>
+            <h3>Reliability and Cost Optimization</h3>
+            <p>
+              Built service-mesh features for component reliability, system resilience, metric-based load balancing,
+              and performance optimizations that reduced CPU and memory usage by 50%.
+            </p>
+            <ul>
+              <li>System Design</li>
+              <li>Observability</li>
+              <li>eBPF</li>
+            </ul>
+            <a href="#story">Read reliability work</a>
+          </article>
+
+          <article class="project-card" data-category="django frontend">
+            <div class="project-pin">03</div>
+            <p class="project-type">Full Stack</p>
+            <h3>ShopAll Ecommerce</h3>
+            <p>
+              Full-stack ecommerce platform with user, product, order, review, and comment data, admin management,
+              email authentication, automated invoice delivery, and Razorpay payments.
+            </p>
+            <ul>
+              <li>Django</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+            <a href="resume.pdf">View ShopAll in resume</a>
+          </article>
+
+          <article class="project-card" data-category="iot platform">
+            <div class="project-pin">04</div>
+            <p class="project-type">Healthcare IoT</p>
+            <h3>Diagnostic Device Interface</h3>
+            <p>
+              Designed device interface and analysis functions for a government healthcare project with IIT Delhi and
+              AIIMS Delhi, using Linux/Raspbian IoT tooling to improve diagnostic accuracy and efficiency.
+            </p>
+            <ul>
+              <li>PyQt5</li>
+              <li>OpenCV</li>
+              <li>Raspberry Pi</li>
+            </ul>
+            <a href="#story">Read IoT experience</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block skill-band" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p>Charm Box</p>
+          <h2 id="skills-title">Skills</h2>
+        </div>
+        <div class="skill-grid">
+          <article>
+            <span class="skill-icon code"></span>
+            <h3>Languages</h3>
+            <p>Golang, C++, Python, Java, C, HTML/CSS, JavaScript, SQL</p>
+          </article>
+          <article>
+            <span class="skill-icon api"></span>
+            <h3>Platform + DevOps</h3>
+            <p>System design, service mesh, Kubernetes, Jenkins, Spinnaker, Docker, Envoy</p>
+          </article>
+          <article>
+            <span class="skill-icon data"></span>
+            <h3>Frameworks</h3>
+            <p>React.js, Django, Spring Boot, Qt, PyQt5, OpenCV</p>
+          </article>
+          <article>
+            <span class="skill-icon ops"></span>
+            <h3>Databases + Cloud</h3>
+            <p>MySQL, Etcd, Oracle, SQLite, AWS, GCP, Raspberry Pi</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" id="story" aria-labelledby="story-title">
+        <div class="section-heading">
+          <p>Planner Pages</p>
+          <h2 id="story-title">Experience</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <span>2024+</span>
+            <p>
+              Software Development Engineer on Platform and DevOps at ShareChat in Bangalore, owning Nexus, designing
+              resilient service-mesh features, reducing NIZE costs by 95%, and improving critical component CPU and
+              memory usage by 50%.
+            </p>
+          </li>
+          <li>
+            <span>2024</span>
+            <p>
+              Freelance Qt Engineer for Amrit MediTech Pvt. Ltd., directing a government healthcare project with IIT
+              Delhi and AIIMS Delhi, and building Linux/Raspbian device interface and analysis workflows.
+            </p>
+          </li>
+          <li>
+            <span>2023</span>
+            <p>
+              Software Engineer Intern on Atlassian's StatusPage team, developing a micro-service that reduced downtime
+              by 20%, improving storage performance by 15%, and optimizing Redis queue traffic by 25%.
+            </p>
+          </li>
+          <li>
+            <span>2020-24</span>
+            <p>
+              B.Tech in Electrical Engineering from IIT (ISM) Dhanbad with CGPA 8.59, graduating among the top 10
+              students in the Electrical Engineering Department.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section-block notes-band" id="notes" aria-labelledby="notes-title">
+        <div class="section-heading">
+          <p>Club Notes</p>
+          <h2 id="notes-title">Achievements + Activities</h2>
+        </div>
+        <div class="responsibility-grid">
+          <article>
+            <p>Hackathon</p>
+            <h3>Google Girls Hackathon 2022</h3>
+            <span>Selected among the top 15 teams in India from 9k+ candidates and top 9 teams from the 2024 batch.</span>
+          </article>
+          <article>
+            <p>Programming</p>
+            <h3>CodeChef Cook-off</h3>
+            <span>Secured Global Rank 528 in the February 2022 Cook-off among 10k+ candidates.</span>
+          </article>
+          <article>
+            <p>Academics</p>
+            <h3>JEE + Department Rank</h3>
+            <span>Top 2% in JEE Mains 2020, top 1% in JEE Advanced 2020, and top 10 in Electrical Engineering.</span>
+          </article>
+          <article>
+            <p>Design</p>
+            <h3>Graphic Designing Team Head</h3>
+            <span>Led design work for Artfreaks, the Fine Arts Club of IIT(ISM), and Udaan, the Career Club.</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p>Letter Set</p>
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <p>
+          Based between Bhubaneswar and Bangalore. Reach out for platform engineering, DevOps, service mesh,
+          backend systems, cloud infrastructure, or full-stack product work.
+        </p>
+        <div class="contact-row" aria-label="Contact actions">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=abhipsap2003%40gmail.com&su=Portfolio%20Contact"
+            target="_blank"
+            rel="noreferrer"
+          >Email</a>
+          <a href="tel:+91-8144037787">Phone</a>
+          <a href="resume.pdf">Resume</a>
+          <a href="https://www.linkedin.com/in/abhipsa-priyadarshini-aa2211219" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
